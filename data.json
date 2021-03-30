@@ -1,0 +1,2252 @@
+[
+    {
+       "id":519194,
+       "title":"The Great Train Robbery",
+       "year":2013,
+       "imdb_id":"tt2763296",
+       "tmdb_id":64257,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":519257,
+       "title":"The Witcher",
+       "year":2002,
+       "imdb_id":"tt1070742",
+       "tmdb_id":17625,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":519289,
+       "title":"The Honourable Woman",
+       "year":2014,
+       "imdb_id":"tt3021686",
+       "tmdb_id":61123,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":519339,
+       "title":"The Indian Detective",
+       "year":2017,
+       "imdb_id":"tt5797220",
+       "tmdb_id":72734,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":519387,
+       "title":"The Jinx: The Life and Deaths of Robert Durst",
+       "year":2015,
+       "imdb_id":"tt4299972",
+       "tmdb_id":61929,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":519398,
+       "title":"The Keepers",
+       "year":2017,
+       "imdb_id":"tt6792200",
+       "tmdb_id":26101,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":519450,
+       "title":"The Last Dance",
+       "year":2020,
+       "imdb_id":"tt8420184",
+       "tmdb_id":79525,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":519529,
+       "title":"The Little Drummer Girl",
+       "year":2018,
+       "imdb_id":"tt7598448",
+       "tmdb_id":76887,
+       "tmdb_type":"tv",
+       "type":"tv_series"
+    },
+    {
+       "id":519560,
+       "title":"The Lost Room",
+       "year":2006,
+       "imdb_id":"tt0830361",
+       "tmdb_id":3868,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":519649,
+       "title":"The Men Who Built America",
+       "year":2012,
+       "imdb_id":"tt2167393",
+       "tmdb_id":56304,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":519662,
+       "title":"The Method",
+       "year":2015,
+       "imdb_id":"tt5135336",
+       "tmdb_id":64446,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":519773,
+       "title":"The Night Of",
+       "year":2016,
+       "imdb_id":"tt2401256",
+       "tmdb_id":66276,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":519834,
+       "title":"The Pacific",
+       "year":2010,
+       "imdb_id":"tt0374463",
+       "tmdb_id":16997,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":520244,
+       "title":"The Staircase",
+       "year":2004,
+       "imdb_id":"tt0388644",
+       "tmdb_id":21421,
+       "tmdb_type":"tv",
+       "type":"tv_series"
+    },
+    {
+       "id":520386,
+       "title":"The Triangle",
+       "year":2005,
+       "imdb_id":"tt0452573",
+       "tmdb_id":9026,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":520450,
+       "title":"The Vietnam War",
+       "year":2017,
+       "imdb_id":"tt1877514",
+       "tmdb_id":46434,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":520494,
+       "title":"The Way We Live Now",
+       "year":2001,
+       "imdb_id":"tt0300879",
+       "tmdb_id":7827,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":520505,
+       "title":"The White Princess",
+       "year":2017,
+       "imdb_id":"tt5705956",
+       "tmdb_id":70215,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":520550,
+       "title":"The World's Most Extraordinary Homes",
+       "year":2017,
+       "imdb_id":"tt7804132",
+       "tmdb_id":71796,
+       "tmdb_type":"tv",
+       "type":"tv_series"
+    },
+    {
+       "id":520616,
+       "title":"Thirteen",
+       "year":2016,
+       "imdb_id":"tt5159916",
+       "tmdb_id":65635,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":520785,
+       "title":"Titanic",
+       "year":2012,
+       "imdb_id":"tt1869152",
+       "tmdb_id":39016,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":521151,
+       "title":"Trump: An American Dream",
+       "year":2017,
+       "imdb_id":"tt7596008",
+       "tmdb_id":78435,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":521371,
+       "title":"Ultraviolet",
+       "year":1998,
+       "imdb_id":"tt0169501",
+       "tmdb_id":232,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":521755,
+       "title":"Vanity Fair",
+       "year":2018,
+       "imdb_id":"tt7076630",
+       "tmdb_id":81222,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":522064,
+       "title":"WWII in HD",
+       "year":2009,
+       "imdb_id":"tt1489097",
+       "tmdb_id":32236,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":522480,
+       "title":"Wild Wild Country",
+       "year":2018,
+       "imdb_id":"tt7768848",
+       "tmdb_id":77601,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":522592,
+       "title":"Women in Love",
+       "year":2011,
+       "imdb_id":"tt1738340",
+       "tmdb_id":43864,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":524362,
+       "title":"A Very Murray Christmas",
+       "year":2015,
+       "imdb_id":"tt4537842",
+       "tmdb_id":364067,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":524478,
+       "title":"Adam Ferrara: Funny As Hell",
+       "year":2009,
+       "imdb_id":"tt1562256",
+       "tmdb_id":35653,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":524549,
+       "title":"Ali Wong: Hard Knock Wife",
+       "year":2018,
+       "imdb_id":"tt7410684",
+       "tmdb_id":518045,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":524676,
+       "title":"Amy Schumer: The Leather Special",
+       "year":2017,
+       "imdb_id":"tt6616074",
+       "tmdb_id":444513,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":524872,
+       "title":"Aziz Ansari: Live at Madison Square Garden",
+       "year":2015,
+       "imdb_id":"tt4530184",
+       "tmdb_id":326665,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":524873,
+       "title":"Aziz Ansari: Buried Alive",
+       "year":2013,
+       "imdb_id":"tt2836450",
+       "tmdb_id":230158,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":525038,
+       "title":"Bert Kreischer: The Machine",
+       "year":2016,
+       "imdb_id":"tt6545220",
+       "tmdb_id":429784,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":525092,
+       "title":"Bill Burr: I'm Sorry You Feel That Way",
+       "year":2014,
+       "imdb_id":"tt3823690",
+       "tmdb_id":308571,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":525094,
+       "title":"Bill Burr: Walk Your Way Out",
+       "year":2017,
+       "imdb_id":"tt6184894",
+       "tmdb_id":437752,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":525102,
+       "title":"Bill Hicks: Revelations",
+       "year":1993,
+       "imdb_id":"tt0152183",
+       "tmdb_id":25117,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":525182,
+       "title":"Bo Burnham: Make Happy",
+       "year":2016,
+       "imdb_id":"tt5192124",
+       "tmdb_id":400608,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":525184,
+       "title":"Bo Burnham: What.",
+       "year":2013,
+       "imdb_id":"tt3210258",
+       "tmdb_id":244001,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":525233,
+       "title":"Bob Saget: That's What I'm Talking About",
+       "year":2013,
+       "imdb_id":"tt2292148",
+       "tmdb_id":193041,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":525234,
+       "title":"Bob Saget: Zero to Sixty",
+       "year":2017,
+       "imdb_id":"tt6856134",
+       "tmdb_id":486657,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":525353,
+       "title":"Brody Stevens: Live from the Main Room",
+       "year":2017,
+       "imdb_id":"tt6546330",
+       "tmdb_id":528175,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":525358,
+       "title":"Bryan Callen: Never Grow Up",
+       "year":2017,
+       "imdb_id":"tt7255620",
+       "tmdb_id":396608,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":525653,
+       "title":"Chelsea Peretti: One of the Greats",
+       "year":2014,
+       "imdb_id":"tt3804556",
+       "tmdb_id":289339,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":525693,
+       "title":"Chris Rock: Tamborine",
+       "year":2018,
+       "imdb_id":"tt8005338",
+       "tmdb_id":505159,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":525696,
+       "title":"Chris Tucker Live",
+       "year":2015,
+       "imdb_id":"tt4835636",
+       "tmdb_id":348035,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":526193,
+       "title":"Dave Chappelle: Equanimity",
+       "year":2017,
+       "imdb_id":"tt7806998",
+       "tmdb_id":488223,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":526277,
+       "title":"Demetri Martin: Live (At The Time)",
+       "year":2015,
+       "imdb_id":"tt4512714",
+       "tmdb_id":354544,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":526279,
+       "title":"Demetri Martin: The Overthinker",
+       "year":2018,
+       "imdb_id":"tt7725144",
+       "tmdb_id":538523,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":526421,
+       "title":"Donald Glover: Weirdo",
+       "year":2012,
+       "imdb_id":"tt2345525",
+       "tmdb_id":84154,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":526590,
+       "title":"Eddie Murphy: Delirious",
+       "year":1983,
+       "imdb_id":"tt0085474",
+       "tmdb_id":15251,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":526915,
+       "title":"Fred Armisen: Standup for Drummers",
+       "year":2018,
+       "imdb_id":"tt7924798",
+       "tmdb_id":502616,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":527020,
+       "title":"Gabriel Iglesias: I'm Sorry for What I Said When I Was Hungry",
+       "year":2016,
+       "imdb_id":"tt6302122",
+       "tmdb_id":429801,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":527066,
+       "title":"Gallagher: Overboard",
+       "year":1987,
+       "imdb_id":"tt0285128",
+       "tmdb_id":334962,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":527074,
+       "title":"Game Changers",
+       "year":2018,
+       "imdb_id":"tt7539078",
+       "tmdb_id":488637,
+       "tmdb_type":"movie",
+       "type":"tv_movie"
+    },
+    {
+       "id":527093,
+       "title":"It's Bad for Ya",
+       "year":2008,
+       "imdb_id":"tt0963207",
+       "tmdb_id":20579,
+       "tmdb_type":"tv",
+       "type":"tv_special"
+    },
+    {
+       "id":527095,
+       "title":"George Carlin: Back in Town",
+       "year":1996,
+       "imdb_id":"tt0246641",
+       "tmdb_id":34509,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":527097,
+       "title":"George Carlin: Complaints & Grievances",
+       "year":2001,
+       "imdb_id":"tt0287460",
+       "tmdb_id":20679,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":527098,
+       "title":"George Carlin: Doin' it Again",
+       "year":1990,
+       "imdb_id":"tt0246642",
+       "tmdb_id":25160,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":527100,
+       "title":"George Carlin: Life Is Worth Losing",
+       "year":2005,
+       "imdb_id":"tt0484855",
+       "tmdb_id":13015,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":527101,
+       "title":"George Carlin: Personal Favorites",
+       "year":1997,
+       "imdb_id":"tt0298343",
+       "tmdb_id":42465,
+       "tmdb_type":"tv",
+       "type":"tv_special"
+    },
+    {
+       "id":527102,
+       "title":"George Carlin: Playin' with Your Head",
+       "year":1986,
+       "imdb_id":"tt0199554",
+       "tmdb_id":34163,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":527164,
+       "title":"Kathleen Madigan: Gone Madigan",
+       "year":2010,
+       "imdb_id":"tt1820451",
+       "tmdb_id":67952,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":527205,
+       "title":"Greg Davies: You Magnificent Beast",
+       "year":2018,
+       "imdb_id":"tt8259682",
+       "tmdb_id":516341,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":527261,
+       "title":"Hannah Gadsby: Nanette",
+       "year":2018,
+       "imdb_id":"tt8465676",
+       "tmdb_id":529531,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":527306,
+       "title":"Hasan Minhaj: Homecoming King",
+       "year":2017,
+       "imdb_id":"tt6900644",
+       "tmdb_id":458310,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":527325,
+       "title":"Henry Rollins: Keep Talking, Pal.",
+       "year":2018,
+       "imdb_id":"tt8241704",
+       "tmdb_id":535645,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":527533,
+       "title":"Iliza Shlesinger: Confirmed Kills",
+       "year":2016,
+       "imdb_id":"tt6081882",
+       "tmdb_id":416867,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":527534,
+       "title":"Iliza Shlesinger: Freezing Hot",
+       "year":2015,
+       "imdb_id":"tt4073952",
+       "tmdb_id":320996,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":527634,
+       "title":"Jack Whitehall: At Large",
+       "year":2017,
+       "imdb_id":"tt7539884",
+       "tmdb_id":479269,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":527665,
+       "title":"Janeane Garofalo: If I May",
+       "year":2016,
+       "imdb_id":"tt6039474",
+       "tmdb_id":421552,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":527704,
+       "title":"Jeff Dunham: Jeff Dunham's Very Special Christmas Special",
+       "year":2008,
+       "imdb_id":"tt1295909",
+       "tmdb_id":14541,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":527706,
+       "title":"Jeff Dunham: Arguing with Myself",
+       "year":2006,
+       "imdb_id":"tt0806102",
+       "tmdb_id":14542,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":527708,
+       "title":"Jeff Dunham: Controlled Chaos",
+       "year":2011,
+       "imdb_id":"tt2058636",
+       "tmdb_id":75190,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":527711,
+       "title":"Jeff Dunham: Spark of Insanity",
+       "year":2007,
+       "imdb_id":"tt1143143",
+       "tmdb_id":14540,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":527732,
+       "title":"Jerry Before Seinfeld",
+       "year":2017,
+       "imdb_id":"tt7310906",
+       "tmdb_id":473812,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":527734,
+       "title":"Jerry Seinfeld: I'm Telling You for the Last Time",
+       "year":1998,
+       "imdb_id":"tt0500140",
+       "tmdb_id":23319,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":527752,
+       "title":"Jim Gaffigan: Beyond the Pale",
+       "year":2006,
+       "imdb_id":"tt0815456",
+       "tmdb_id":108930,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":527753,
+       "title":"Jim Gaffigan: Cinco",
+       "year":2017,
+       "imdb_id":"tt6090102",
+       "tmdb_id":432959,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":527754,
+       "title":"Jim Gaffigan: King Baby",
+       "year":2009,
+       "imdb_id":"tt1390471",
+       "tmdb_id":20837,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":527755,
+       "title":"Jim Gaffigan: Noble Ape",
+       "year":2018,
+       "imdb_id":"tt7535580",
+       "tmdb_id":530584,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":527756,
+       "title":"Jim Gaffigan: Obsessed",
+       "year":2014,
+       "imdb_id":"tt3481550",
+       "tmdb_id":263111,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":527758,
+       "title":"Jim Jefferies: Bare",
+       "year":2014,
+       "imdb_id":"tt3958494",
+       "tmdb_id":289333,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":527759,
+       "title":"Jim Jefferies: Freedumb",
+       "year":2016,
+       "imdb_id":"tt5849950",
+       "tmdb_id":404022,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":527762,
+       "title":"Jim Jefferies: This Is Me Now",
+       "year":2018,
+       "imdb_id":"tt8617844",
+       "tmdb_id":532374,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":527804,
+       "title":"Joe Rogan: Triggered",
+       "year":2016,
+       "imdb_id":"tt6023444",
+       "tmdb_id":421854,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":527826,
+       "title":"John Mulaney: Kid Gorgeous at Radio City",
+       "year":2018,
+       "imdb_id":"tt8271714",
+       "tmdb_id":520594,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":527827,
+       "title":"John Mulaney: New in Town",
+       "year":2012,
+       "imdb_id":"tt2246779",
+       "tmdb_id":86705,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":527828,
+       "title":"John Mulaney: The Comeback Kid",
+       "year":2015,
+       "imdb_id":"tt5069564",
+       "tmdb_id":367735,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":527862,
+       "title":"Judah Friedlander: America Is the Greatest Country in the United States",
+       "year":2017,
+       "imdb_id":"tt7582890",
+       "tmdb_id":484413,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":527961,
+       "title":"Katt Williams: Kattpacalypse",
+       "year":2012,
+       "imdb_id":"tt2370686",
+       "tmdb_id":129415,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":527994,
+       "title":"Keith Robinson: Back of the Bus Funny",
+       "year":2014,
+       "imdb_id":"tt3765378",
+       "tmdb_id":326553,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":527995,
+       "title":"Kevin Hart: I'm a Grown Little Man",
+       "year":2009,
+       "imdb_id":"tt1420554",
+       "tmdb_id":27866,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":527996,
+       "title":"Kevin Hart: Seriously Funny",
+       "year":2010,
+       "imdb_id":"tt1714196",
+       "tmdb_id":42189,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":528000,
+       "title":"Kevin Nealon: Whelmed, But Not Overly",
+       "year":2012,
+       "imdb_id":"tt2261735",
+       "tmdb_id":191120,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":528003,
+       "title":"Kevin Smith: Silent but Deadly",
+       "year":2018,
+       "imdb_id":"tt8102036",
+       "tmdb_id":517792,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":528219,
+       "title":"Lewis Black: Black to the Future",
+       "year":2016,
+       "imdb_id":"tt6114206",
+       "tmdb_id":418992,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":528351,
+       "title":"Louie Anderson: Big Baby Boomer",
+       "year":2012,
+       "imdb_id":"tt2217861",
+       "tmdb_id":138323,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":528353,
+       "title":"Louis C.K.: 2017",
+       "year":2017,
+       "imdb_id":"tt6736782",
+       "tmdb_id":449674,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":528356,
+       "title":"Louis C.K.: Hilarious",
+       "year":2010,
+       "imdb_id":"tt1421373",
+       "tmdb_id":45523,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":528357,
+       "title":"Louis C.K.: Live at The Comedy Store",
+       "year":2015,
+       "imdb_id":"tt4368814",
+       "tmdb_id":321594,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":528640,
+       "title":"Marc Maron: Thinky Pain",
+       "year":2013,
+       "imdb_id":"tt3004634",
+       "tmdb_id":226632,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":528656,
+       "title":"Maria Bamford: The Special Special Special!",
+       "year":2012,
+       "imdb_id":"tt2546038",
+       "tmdb_id":147129,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":528818,
+       "title":"Michael Che Matters",
+       "year":2016,
+       "imdb_id":"tt6209400",
+       "tmdb_id":425498,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":528844,
+       "title":"Mike Birbiglia: My Girlfriend's Boyfriend",
+       "year":2013,
+       "imdb_id":"tt2937390",
+       "tmdb_id":216652,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":528845,
+       "title":"Mike Birbiglia: Thank God for Jokes",
+       "year":2017,
+       "imdb_id":"tt6608034",
+       "tmdb_id":442087,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":528846,
+       "title":"Mike Birbiglia: What I Should Have Said Was Nothing",
+       "year":2008,
+       "imdb_id":"tt1188112",
+       "tmdb_id":55804,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":528854,
+       "title":"Mike Tyson: Undisputed Truth",
+       "year":2013,
+       "imdb_id":"tt3009336",
+       "tmdb_id":210041,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":529164,
+       "title":"Neal Brennan: 3 Mics",
+       "year":2017,
+       "imdb_id":"tt6438918",
+       "tmdb_id":435351,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":529222,
+       "title":"Nick Cannon: Stand Up, Don't Shoot",
+       "year":2017,
+       "imdb_id":"tt6328086",
+       "tmdb_id":440047,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":529330,
+       "title":"Norm Macdonald: Hitler's Dog, Gossip & Trickery",
+       "year":2017,
+       "imdb_id":"tt6878486",
+       "tmdb_id":456193,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":529376,
+       "title":"George Carlin: On Location at Phoenix",
+       "year":1978,
+       "imdb_id":"tt0249853",
+       "tmdb_id":57837,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":529516,
+       "title":"Patton Oswalt: Annihilation",
+       "year":2017,
+       "imdb_id":"tt7026230",
+       "tmdb_id":479263,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":529520,
+       "title":"Patton Oswalt: Talking for Clapping",
+       "year":2016,
+       "imdb_id":"tt5457520",
+       "tmdb_id":392891,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":530010,
+       "title":"Ricky Gervais: Humanity",
+       "year":2018,
+       "imdb_id":"tt7830574",
+       "tmdb_id":508933,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":530041,
+       "title":"Rob Schneider: Soy Sauce and the Holocaust",
+       "year":2013,
+       "imdb_id":"tt2734818",
+       "tmdb_id":216285,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":530278,
+       "title":"Sarah Silverman: A Speck of Dust",
+       "year":2017,
+       "imdb_id":"tt6948354",
+       "tmdb_id":459295,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":530280,
+       "title":"Sasheer Zamata: Pizza Mind",
+       "year":2017,
+       "imdb_id":"tt6373616",
+       "tmdb_id":449672,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":530664,
+       "title":"Steve Martin and Martin Short: An Evening You Will Forget for the Rest of Your Life",
+       "year":2018,
+       "imdb_id":"tt8075256",
+       "tmdb_id":525814,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":531067,
+       "title":"Terror at the Mall",
+       "year":2014,
+       "imdb_id":"tt4007554",
+       "tmdb_id":293126,
+       "tmdb_type":"movie",
+       "type":"tv_movie"
+    },
+    {
+       "id":533111,
+       "title":"Tim Allen: Men Are Pigs",
+       "year":1990,
+       "imdb_id":"tt0259057",
+       "tmdb_id":41748,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":533138,
+       "title":"Tom Arnold: Past & Present Imperfectly",
+       "year":2018,
+       "imdb_id":"tt7635310",
+       "tmdb_id":528170,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":533146,
+       "title":"Tom Segura: Completely Normal",
+       "year":2014,
+       "imdb_id":"tt3500822",
+       "tmdb_id":259395,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":533147,
+       "title":"Tom Segura: Disgraceful",
+       "year":2018,
+       "imdb_id":"tt7379330",
+       "tmdb_id":497520,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":533148,
+       "title":"Tom Segura: Mostly Stories",
+       "year":2016,
+       "imdb_id":"tt4970632",
+       "tmdb_id":376482,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":533220,
+       "title":"Trevor Noah: Afraid of the Dark",
+       "year":2017,
+       "imdb_id":"tt6562866",
+       "tmdb_id":440767,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":533567,
+       "title":"Unsportsmanlike Comedy with Rob Gronkowski",
+       "year":2018,
+       "imdb_id":"tt7827042",
+       "tmdb_id":498092,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":534558,
+       "title":"Bert Kreischer: Secret Time",
+       "year":2018,
+       "imdb_id":"tt8786466",
+       "tmdb_id":542694,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":534728,
+       "title":"Daniel Sloss: Live Shows",
+       "year":2018,
+       "imdb_id":"tt8858472",
+       "tmdb_id":91252,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":535683,
+       "title":"Birdie Buddy",
+       "year":2011,
+       "imdb_id":"tt2424754",
+       "tmdb_id":40017,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":535753,
+       "title":"Saki",
+       "year":2013,
+       "imdb_id":"tt2562278",
+       "tmdb_id":46834,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":535884,
+       "title":"His Dark Materials",
+       "year":2019,
+       "imdb_id":"tt5607976",
+       "tmdb_id":68507,
+       "tmdb_type":"tv",
+       "type":"tv_series"
+    },
+    {
+       "id":536119,
+       "title":"The War of the Worlds",
+       "year":2019,
+       "imdb_id":"tt8001226",
+       "tmdb_id":83981,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":536178,
+       "title":"Watership Down",
+       "year":2018,
+       "imdb_id":"tt5670764",
+       "tmdb_id":68394,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":536224,
+       "title":"David Copperfield",
+       "year":1986,
+       "imdb_id":"tt0092335",
+       "tmdb_id":23403,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":536540,
+       "title":"Ellen DeGeneres: Relatable",
+       "year":2018,
+       "imdb_id":"tt7157574",
+       "tmdb_id":535358,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":536945,
+       "title":"Loni Love: America's Sister",
+       "year":2010,
+       "imdb_id":"tt1705119",
+       "tmdb_id":170063,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":537071,
+       "title":"Tom Rhodes: Light, Sweet, Crude",
+       "year":2012,
+       "imdb_id":"tt2194703",
+       "tmdb_id":142995,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":537073,
+       "title":"Sinbad: Make Me Wanna Holla",
+       "year":2014,
+       "imdb_id":"tt3110818",
+       "tmdb_id":274712,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":537137,
+       "title":"Surviving R. Kelly",
+       "year":2019,
+       "imdb_id":"tt8385496",
+       "tmdb_id":85389,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":537297,
+       "title":"Gabriel Iglesias: One Show Fits All",
+       "year":2019,
+       "imdb_id":"tt9426212",
+       "tmdb_id":573911,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":537488,
+       "title":"Innocent",
+       "year":2017,
+       "imdb_id":"tt6478318",
+       "tmdb_id":69786,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":537603,
+       "title":"Ray Romano: Right Here, Around the Corner",
+       "year":2019,
+       "imdb_id":"tt8101766",
+       "tmdb_id":573910,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":537650,
+       "title":"The Eddy",
+       "year":2020,
+       "imdb_id":"tt7322210",
+       "tmdb_id":86784,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":537671,
+       "title":"Dracula",
+       "year":2020,
+       "imdb_id":"tt9139220",
+       "tmdb_id":86850,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":537702,
+       "title":"Tone Bell - Can't Cancel This",
+       "year":2019,
+       "imdb_id":"tt8358498",
+       "tmdb_id":584224,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":537711,
+       "title":"Formula 1: Drive to Survive",
+       "year":2019,
+       "imdb_id":"tt8289930",
+       "tmdb_id":87083,
+       "tmdb_type":"tv",
+       "type":"tv_series"
+    },
+    {
+       "id":537712,
+       "title":"Chernobyl",
+       "year":2019,
+       "imdb_id":"tt7366338",
+       "tmdb_id":87108,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":537784,
+       "title":"The Bush Years: Family, Duty, Power",
+       "year":2019,
+       "imdb_id":"tt9787482",
+       "tmdb_id":87226,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":537790,
+       "title":"Robert Schimmel: Life Since Then",
+       "year":2009,
+       "imdb_id":"tt1401899",
+       "tmdb_id":71557,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":537908,
+       "title":"Jermaine Fowler: Give 'Em Hell, Kid",
+       "year":2015,
+       "imdb_id":"tt5270832",
+       "tmdb_id":378044,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":537990,
+       "title":"Bitter Daisies",
+       "year":2018,
+       "imdb_id":"tt9412454",
+       "tmdb_id":88027,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":538042,
+       "title":"Ghosts",
+       "year":2019,
+       "imdb_id":"tt8594324",
+       "tmdb_id":17174,
+       "tmdb_type":"tv",
+       "type":"tv_series"
+    },
+    {
+       "id":538126,
+       "title":"Booba",
+       "year":2014,
+       "imdb_id":"tt6581428",
+       "tmdb_id":81700,
+       "tmdb_type":"tv",
+       "type":"tv_series"
+    },
+    {
+       "id":538140,
+       "title":"Sweet Revenge",
+       "year":2017,
+       "imdb_id":"tt9552278",
+       "tmdb_id":76330,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":538300,
+       "title":"Kowabon",
+       "year":2015,
+       "imdb_id":"tt7524974",
+       "tmdb_id":64754,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":538349,
+       "title":"Small Axe",
+       "year":2020,
+       "imdb_id":"tt3464896",
+       "tmdb_id":90705,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":538413,
+       "title":"The Flood",
+       "year":2018,
+       "imdb_id":"tt9154632",
+       "tmdb_id":616104,
+       "tmdb_type":"movie",
+       "type":"tv_movie"
+    },
+    {
+       "id":538425,
+       "title":"Ward Anderson: Kind of\u2026Sort of\u2026Grown Up",
+       "year":2017,
+       "imdb_id":"tt6720174",
+       "tmdb_id":616967,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":538450,
+       "title":"The Apollo Chronicles",
+       "year":2019,
+       "imdb_id":"tt10609012",
+       "tmdb_id":91521,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":538453,
+       "title":"I Am...",
+       "year":2017,
+       "imdb_id":"tt7221514",
+       "tmdb_id":73069,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":538482,
+       "title":"Our Boys",
+       "year":2019,
+       "imdb_id":"tt10517426",
+       "tmdb_id":91752,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":538484,
+       "title":"The Spy",
+       "year":2019,
+       "imdb_id":"tt5952634",
+       "tmdb_id":91725,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":538567,
+       "title":"Midnight Diner: Tokyo Stories",
+       "year":2016,
+       "imdb_id":"tt6150576",
+       "tmdb_id":92408,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":538620,
+       "title":"Bill Burr: Paper Tiger",
+       "year":2019,
+       "imdb_id":"tt10847306",
+       "tmdb_id":625128,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":538633,
+       "title":"Hello, Privilege. It's Me, Chelsea",
+       "year":2019,
+       "imdb_id":"tt10847138",
+       "tmdb_id":628039,
+       "tmdb_type":"movie",
+       "type":"tv_movie"
+    },
+    {
+       "id":538676,
+       "title":"Trigonometry",
+       "year":2020,
+       "imdb_id":"tt8000970",
+       "tmdb_id":93704,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":538679,
+       "title":"The Pale Horse",
+       "year":2020,
+       "imdb_id":"tt10485750",
+       "tmdb_id":93705,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":538820,
+       "title":"Mike Birbiglia: The New One",
+       "year":2019,
+       "imdb_id":"tt11163014",
+       "tmdb_id":642739,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":538833,
+       "title":"Santos Dumont",
+       "year":2019,
+       "imdb_id":"tt10228550",
+       "tmdb_id":94449,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":538858,
+       "title":"The Devil Next Door",
+       "year":2019,
+       "imdb_id":"tt11165002",
+       "tmdb_id":94813,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":538862,
+       "title":"Seth Meyers: Lobby Baby",
+       "year":2019,
+       "imdb_id":"tt11168100",
+       "tmdb_id":642203,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":538916,
+       "title":"Ronny Chieng: Asian Comedian Destroys America!",
+       "year":2019,
+       "imdb_id":"tt11248800",
+       "tmdb_id":649802,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":538936,
+       "title":"John Mulaney & The Sack Lunch Bunch",
+       "year":2019,
+       "imdb_id":"tt11318624",
+       "tmdb_id":650073,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":538942,
+       "title":"Upright",
+       "year":2019,
+       "imdb_id":"tt8765446",
+       "tmdb_id":95913,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":538946,
+       "title":"The First Temptation of Christ",
+       "year":2019,
+       "imdb_id":"tt11310004",
+       "tmdb_id":652020,
+       "tmdb_type":"movie",
+       "type":"movie"
+    },
+    {
+       "id":538951,
+       "title":"The Confession Killer",
+       "year":2019,
+       "imdb_id":"tt11307176",
+       "tmdb_id":95986,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":538981,
+       "title":"Spirit Riding Free: Spirit of Christmas",
+       "year":2019,
+       "imdb_id":"tt11313068",
+       "tmdb_id":653904,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":539009,
+       "title":"Hostel Daze",
+       "year":2019,
+       "imdb_id":"tt11407524",
+       "tmdb_id":96421,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":539014,
+       "title":"Rise of Empires: Ottoman",
+       "year":2020,
+       "imdb_id":"tt9244578",
+       "tmdb_id":96481,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":539059,
+       "title":"The Forgotten Army - Azaadi ke liye",
+       "year":2020,
+       "imdb_id":"tt10289938",
+       "tmdb_id":96853,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":539074,
+       "title":"White House Farm",
+       "year":2020,
+       "imdb_id":"tt11110622",
+       "tmdb_id":96954,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":539090,
+       "title":"Killer Inside: The Mind of Aaron Hernandez",
+       "year":2020,
+       "imdb_id":"tt11475228",
+       "tmdb_id":97062,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":539207,
+       "title":"Reckoning",
+       "year":2019,
+       "imdb_id":"tt8690440",
+       "tmdb_id":98537,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":539228,
+       "title":"Ted Bundy: Falling for a Killer",
+       "year":2020,
+       "imdb_id":"tt11141900",
+       "tmdb_id":97428,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":539235,
+       "title":"The Pharmacist",
+       "year":2020,
+       "imdb_id":"tt11600174",
+       "tmdb_id":98735,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":539275,
+       "title":"Who Killed Malcolm X?",
+       "year":2019,
+       "imdb_id":"tt10948316",
+       "tmdb_id":98762,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":539299,
+       "title":"Dave Chappelle: The Kennedy Center Mark Twain Prize",
+       "year":2020,
+       "imdb_id":"tt11569640",
+       "tmdb_id":662059,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":539313,
+       "title":"Taylor Tomlinson: Quarter-Life Crisis",
+       "year":2020,
+       "imdb_id":"tt11738792",
+       "tmdb_id":671652,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":539327,
+       "title":"Lost Temple of The Inca",
+       "year":2020,
+       "imdb_id":"tt11668444",
+       "tmdb_id":672491,
+       "tmdb_type":"movie",
+       "type":"tv_movie"
+    },
+    {
+       "id":539363,
+       "title":"Freud",
+       "year":2020,
+       "imdb_id":"tt8667956",
+       "tmdb_id":99509,
+       "tmdb_type":"tv",
+       "type":"tv_series"
+    },
+    {
+       "id":539380,
+       "title":"Unorthodox",
+       "year":2020,
+       "imdb_id":"tt9815454",
+       "tmdb_id":99581,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":539397,
+       "title":"Shaquille O'Neal All-Star Comedy Jam Live from Atlanta",
+       "year":2013,
+       "imdb_id":"tt3085312",
+       "tmdb_id":228649,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":539398,
+       "title":"Bert Kreischer: Hey Big Boy",
+       "year":2020,
+       "imdb_id":"tt11810424",
+       "tmdb_id":675267,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":539426,
+       "title":"Marc Maron: End Times Fun",
+       "year":2020,
+       "imdb_id":"tt11810418",
+       "tmdb_id":675595,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":539474,
+       "title":"The Trials of Gabriel Fernandez",
+       "year":2020,
+       "imdb_id":"tt11822998",
+       "tmdb_id":99626,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":539492,
+       "title":"Pete Davidson: Alive from New York",
+       "year":2020,
+       "imdb_id":"tt11474156",
+       "tmdb_id":673768,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":539527,
+       "title":"Grace",
+       "year":2014,
+       "imdb_id":"tt3809818",
+       "tmdb_id":66835,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":539560,
+       "title":"The English Game",
+       "year":2020,
+       "imdb_id":"tt8403664",
+       "tmdb_id":100052,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":539585,
+       "title":"Tom Segura: Ball Hog",
+       "year":2020,
+       "imdb_id":"tt11861072",
+       "tmdb_id":676601,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":539678,
+       "title":"Belichick & Saban: The Art of Coaching",
+       "year":2019,
+       "imdb_id":"tt11477684",
+       "tmdb_id":642394,
+       "tmdb_type":"movie",
+       "type":"tv_movie"
+    },
+    {
+       "id":539696,
+       "title":"How to Fix a Drug Scandal",
+       "year":2020,
+       "imdb_id":"tt11958942",
+       "tmdb_id":100407,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":539717,
+       "title":"Money Heist: The Phenomenon",
+       "year":2020,
+       "imdb_id":"tt12078990",
+       "tmdb_id":689249,
+       "tmdb_type":"movie",
+       "type":"tv_movie"
+    },
+    {
+       "id":539733,
+       "title":"Best Wishes, Warmest Regards: A Schitt's Creek Farewell",
+       "year":2020,
+       "imdb_id":"tt12004838",
+       "tmdb_id":690848,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":539744,
+       "title":"Inhuman Resources",
+       "year":2020,
+       "imdb_id":"tt12101170",
+       "tmdb_id":101690,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":539788,
+       "title":"Chernobyl: Aftermath",
+       "year":2016,
+       "imdb_id":"tt10072988",
+       "tmdb_id":102179,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":539814,
+       "title":"ARASHI's Diary -Voyage-",
+       "year":2019,
+       "imdb_id":"tt11434874",
+       "tmdb_id":102355,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":539815,
+       "title":"Jerry Seinfeld: 23 Hours to Kill",
+       "year":2020,
+       "imdb_id":"tt12117854",
+       "tmdb_id":696000,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":539826,
+       "title":"High School Musical: The Musical: The Series: The Special",
+       "year":2019,
+       "imdb_id":"tt11448424",
+       "tmdb_id":658938,
+       "tmdb_type":"movie",
+       "type":"tv_movie"
+    },
+    {
+       "id":539856,
+       "title":"The Last Narc",
+       "year":2020,
+       "imdb_id":"tt12163674",
+       "tmdb_id":102831,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":539879,
+       "title":"Ben Platt: Live from Radio City Music Hall",
+       "year":2020,
+       "imdb_id":"tt11000894",
+       "tmdb_id":699210,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":539892,
+       "title":"I'll Be Gone in the Dark",
+       "year":2020,
+       "imdb_id":"tt8259114",
+       "tmdb_id":103023,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":539897,
+       "title":"Katherine Ryan: In Trouble",
+       "year":2017,
+       "imdb_id":"tt6540084",
+       "tmdb_id":439107,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":539959,
+       "title":"Jeffrey Epstein: Filthy Rich",
+       "year":2020,
+       "imdb_id":"tt12312250",
+       "tmdb_id":103506,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":539966,
+       "title":"The Killer Truth",
+       "year":2020,
+       "imdb_id":"tt12185180",
+       "tmdb_id":103687,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":540261,
+       "title":"Adventure Time: Distant Lands",
+       "year":2020,
+       "imdb_id":"tt11165358",
+       "tmdb_id":94810,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":540299,
+       "title":"Coronavirus, Explained",
+       "year":2020,
+       "imdb_id":"tt12189310",
+       "tmdb_id":102360,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":540302,
+       "title":"Gokudo",
+       "year":1999,
+       "imdb_id":"tt0756269",
+       "tmdb_id":34701,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":540304,
+       "title":"Down to Earth with Zac Efron",
+       "year":2020,
+       "imdb_id":"tt12585152",
+       "tmdb_id":105288,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":540308,
+       "title":"Back To The Titanic",
+       "year":2020,
+       "imdb_id":"tt12100782",
+       "tmdb_id":682666,
+       "tmdb_type":"movie",
+       "type":"tv_movie"
+    },
+    {
+       "id":540314,
+       "title":"Fear City: New York vs The Mafia",
+       "year":2020,
+       "imdb_id":"tt12588372",
+       "tmdb_id":105489,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":540349,
+       "title":"The Business of Drugs",
+       "year":2020,
+       "imdb_id":"tt12588416",
+       "tmdb_id":105305,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":540355,
+       "title":"Jim Jefferies: Intolerant",
+       "year":2020,
+       "imdb_id":"tt12588160",
+       "tmdb_id":718831,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":540358,
+       "title":"We Are Who We Are",
+       "year":2020,
+       "imdb_id":"tt9848536",
+       "tmdb_id":88713,
+       "tmdb_type":"tv",
+       "type":"tv_series"
+    },
+    {
+       "id":540376,
+       "title":"Bill Burr: You People Are All The Same",
+       "year":2012,
+       "imdb_id":"tt2290153",
+       "tmdb_id":191489,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":540519,
+       "title":"Larry The Cable Guy: Remain Seated",
+       "year":2020,
+       "imdb_id":"tt11464488",
+       "tmdb_id":731486,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":540520,
+       "title":"Ali Wong: Baby Cobra",
+       "year":2016,
+       "imdb_id":"tt5066574",
+       "tmdb_id":396292,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":540537,
+       "title":"The Investigation",
+       "year":2020,
+       "imdb_id":"tt9112152",
+       "tmdb_id":110333,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":540542,
+       "title":"Agents of Chaos",
+       "year":2020,
+       "imdb_id":"tt12967950",
+       "tmdb_id":108154,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":540543,
+       "title":"Des",
+       "year":2020,
+       "imdb_id":"tt11656892",
+       "tmdb_id":96628,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":540555,
+       "title":"Michael McIntyre: Showman",
+       "year":2020,
+       "imdb_id":"tt11860624",
+       "tmdb_id":743059,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":540561,
+       "title":"Someone Has to Die",
+       "year":2020,
+       "imdb_id":"tt10311932",
+       "tmdb_id":105904,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":540576,
+       "title":"Oktoberfest: Beer and Blood",
+       "year":2020,
+       "imdb_id":"tt10244612",
+       "tmdb_id":94002,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":540581,
+       "title":"Challenger: The Final Flight",
+       "year":2020,
+       "imdb_id":"tt12930534",
+       "tmdb_id":108298,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":540617,
+       "title":"The Lego Star Wars Holiday Special",
+       "year":2020,
+       "imdb_id":"tt12885438",
+       "tmdb_id":732670,
+       "tmdb_type":"movie",
+       "type":"tv_movie"
+    },
+    {
+       "id":540669,
+       "title":"Carmel: Who Killed Maria Marta?",
+       "year":2020,
+       "imdb_id":"tt13244092",
+       "tmdb_id":111495,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":540705,
+       "title":"A West Wing Special to Benefit When We All Vote",
+       "year":2020,
+       "imdb_id":"tt13180026",
+       "tmdb_id":753563,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":540736,
+       "title":"The Minions of Midas",
+       "year":2020,
+       "imdb_id":"tt10147520",
+       "tmdb_id":111761,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":540761,
+       "title":"The Queen's Gambit",
+       "year":2020,
+       "imdb_id":"tt10048342",
+       "tmdb_id":87739,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":540770,
+       "title":"Murder on Middle Beach",
+       "year":2020,
+       "imdb_id":"tt13263106",
+       "tmdb_id":112111,
+       "tmdb_type":"tv",
+       "type":"tv_miniseries"
+    },
+    {
+       "id":540798,
+       "title":"An Evening with Tim Heidecker",
+       "year":2020,
+       "imdb_id":"tt13345776",
+       "tmdb_id":753702,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":540814,
+       "title":"Between the World and Me",
+       "year":2020,
+       "imdb_id":"tt12890926",
+       "tmdb_id":728212,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":540831,
+       "title":"The Fresh Prince of Bel-Air Reunion Special",
+       "year":2020,
+       "imdb_id":"tt13315308",
+       "tmdb_id":738362,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":540852,
+       "title":"A Go! Go! Cory Carson Christmas",
+       "year":2020,
+       "imdb_id":"tt13479662",
+       "tmdb_id":766534,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":540869,
+       "title":"Captain Underpants: Mega Blissmas",
+       "year":2020,
+       "imdb_id":"tt13411948",
+       "tmdb_id":768509,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":540875,
+       "title":"Dance Dreams: Hot Chocolate Nutcracker",
+       "year":2020,
+       "imdb_id":"tt8741182",
+       "tmdb_id":755328,
+       "tmdb_type":"movie",
+       "type":"movie"
+    },
+    {
+       "id":540880,
+       "title":"The Disney Holiday Singalong",
+       "year":2020,
+       "imdb_id":"tt13392122",
+       "tmdb_id":769647,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":540897,
+       "title":"Chico Bon Bon and the Very Berry Holiday",
+       "year":2020,
+       "imdb_id":"tt13411942",
+       "tmdb_id":771305,
+       "tmdb_type":"movie",
+       "type":"tv_movie"
+    },
+    {
+       "id":540900,
+       "title":"A Trash Truck Christmas",
+       "year":2020,
+       "imdb_id":"tt13458584",
+       "tmdb_id":774810,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    },
+    {
+       "id":540910,
+       "title":"London Hughes: To Catch A D*ck",
+       "year":2020,
+       "imdb_id":"tt13528526",
+       "tmdb_id":774885,
+       "tmdb_type":"movie",
+       "type":"tv_special"
+    }
+ ]

@@ -4,6 +4,11 @@ apiKey="KiPGkbzEgEKUwhVXB3WARAco0prVUiCdWSuPiTUb"
 
 
 def fetchSourceData():
+
+  #params to take in 
+    #types:this is the type of accounts offered i.e sub,free,purchase
+    #regions:this the region where this streaming services are found 
+     #https://api.watchmode.com/v1/sources/?apiKey=KiPGkbzEgEKUwhVXB3WARAco0prVUiCdWSuPiTUb&regions=US
     with urllib.request.urlopen(f"https://api.watchmode.com/v1/sources/?apiKey={apiKey}") as url:
       data = json.loads(url.read().decode())
       print(data)
@@ -28,6 +33,24 @@ def fetchTitleData():
       data = json.loads(url.read().decode())
       print(data)
 
+def fetchlistTitleData():
+    movies_array=[]
+    total_pages=57
+    page=1
+    while page<total_pages:
+        with urllib.request.urlopen(f"https://api.watchmode.com/v1/list-titles/?apiKey={apiKey}&source_ids=203,387,372,159,26&page={page}") as url:
+          data = json.loads(url.read().decode())
+          print(page)
+          movies_array+=data["titles"]
+          # print(data["total_pages"])
+          # writeIntoJson(data["titles"])
+          page+=1
+    return movies_array
+
+def writeToFile():
+    data=fetchlistTitleData()
+    with open('data.txt', 'w') as outfile:
+        json.dump(data, outfile)
 
 
 
@@ -39,7 +62,4 @@ def fetchTitleData():
 
 
 
-
-
-
-fetchSourceData()
+writeToFile()
