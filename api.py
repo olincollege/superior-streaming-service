@@ -3,6 +3,14 @@ import json
 apiKey="SI4GiZabAskTGu45hy9LUzyQThhVeJzMor9iY3rD"
 apiKey2='VPj1VSW4gltUJXs40u0o7kdozDToKqYWco0a7zNc'
 apiKey3='YsD9TJSwufHmkcTOKqZ7SAPhdLirB8kRldcJ9pNB'
+testApi1='ksDAw94LqRdMIpZJGAXcwlGcIO5Ritn4ZQz5Xi7c'
+testApi2="TWocNuvi7WVBGGULh1TdThsT8c9oU2AGHCtPN7O8"
+testApi3="FF6tlX26yEjdRPKcz4Ki4UY025GOWsIQzrq0OV5C"
+testApi4="9JeALxiKnHzjSR5iWgZCQjKGLpBl8uEOVPK8a0Pi"
+testApi5="vaXqIU2y3AB0GSwhZQRgLYYhUsHQPjEO4AvQnFHt"
+testApi6="rrFdXashTiwZVMCASk6aAgmMFjnb7JyXmcd9yglu"
+testApi7="oWBeZ4Up3ESsGPZRn9wmlISCndVW1G2ZV7nbXakx"
+
 
 
 def fetchSourceData():
@@ -31,15 +39,15 @@ def fetchGenreData():
       print(data) 
 
 def fetchTitleData(id,count):
-   current_api_key=apiKey
-   if  count % 2 == 0:
-     current_api_key=apiKey
-   elif count % 3:
-     current_api_key=apiKey2
-   else:
-     current_api_key=apiKey3
+  #  current_api_key=apiKey
+  #  if  count % 2 == 0:
+  #    current_api_key=apiKey
+  #  elif count % 3:
+  #    current_api_key=apiKey2
+  #  else:
+  #    current_api_key=apiKey3
 
-   with urllib.request.urlopen(f"https://api.watchmode.com/v1/title/{id}/details/?apiKey={current_api_key}") as url:
+   with urllib.request.urlopen(f"https://api.watchmode.com/v1/title/{id}/details/?apiKey={testApi4}") as url:
       data = json.loads(url.read().decode())
       print(data)
       if data:
@@ -48,10 +56,10 @@ def fetchTitleData(id,count):
 
 def fetchlistTitleData():
     movies_array=[]
-    total_pages=3
+    total_pages=34
     page=1
     while page<=total_pages:
-        with urllib.request.urlopen(f"https://api.watchmode.com/v1/list-titles/?apiKey={apiKey}&source_ids=77&page={page}") as url:
+        with urllib.request.urlopen(f"https://api.watchmode.com/v1/list-titles/?apiKey={apiKey3}&source_ids=26&page={page}") as url:
           data = json.loads(url.read().decode())
           print(page)
           movies_array+=data["titles"]
@@ -63,25 +71,36 @@ def fetchlistTitleData():
 
 def writeToFile():
     data=fetchlistTitleData()
-    with open('crackle.txt', 'w') as outfile:
+    with open('amazon.txt', 'w') as outfile:
         json.dump(data, outfile)
 
-def fetchTitleDetails():
-    with open('crackle.txt') as json_file:
+def fetchTitleDetails(srcfile,source):
+    with open(srcfile) as json_file:
      data = json.load(json_file)
      titles=[]
      count=0
      for i in data:
-       print(count)
-       title=fetchTitleData(i['id'],count)
-       titles.append(title)
-       count+=1
+       if count <=100:
+        print(count)
+        title=fetchTitleData(i['id'],count)
+        title['source']= source
+        titles.append(title)
+        count+=1
+       else:
+         break 
      return titles
 def saveTitleData():
-    data=fetchTitleDetails()
-    with open('crackletitle.txt', 'w') as outfile:
+    data=fetchTitleDetails("amazon.txt","Amazon Prime")
+    with open('amazontitles.txt', 'w') as outfile:
         json.dump(data, outfile)
 
+def analyzeTitleData():
+  with open('crackletitle.txt') as json_file:
+     data = json.load(json_file)
+     for i in data:
+         if i['genres'] != None:
+            print(i['genres'][:1])
+       
 
 
 
