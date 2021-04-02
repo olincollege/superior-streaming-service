@@ -136,37 +136,45 @@ def merge_files(file1, file2, file3, file4, file5, combined_file):
         outfile.write("\n")
   pass
 
-def get_genre(genre, list=False):
+def decode_genre(genre):
   """
-  Decodes genres and returns all movies of the inputted genre
+  Decodes genres by turning the name of the genre into an encoded number
 
   Args: 
   genre: a string containing the name of the genre
-
-  list: an optional argument in case the user wants to see the list of genres
-  that are available. It is a boolean. If list = True, then the list of genres
-  will be returned; otherwise, it will not be returned.
 
   Returns:
   A list of dictionaries of all of the movies across 5 streaming services that fit
   within a genre
   """
-  #return list of valid genres
   #decoding the genre
   with open("genre.txt") as json_file:
     genre_data = json.load(json_file)
     specific_genre = [item for item in genre_data if item["name"] == genre]
     genre_number = specific_genre[0]["id"]
+  return genre_number
 
+
+#might not need this
+def get_movies(genre):
+
+  """
+
+  Decodes genres and returns all movies of the inputted genre
+
+  Args: 
+  genre: a string containing the name of the genre
+
+  Returns:
+  A list of dictionaries of all of the movies across 5 streaming services that fit
+  within a genre
+  """
   #get all movies with genre id "genre_number" 
+  genre_number = decode_genre(genre)
   with open("movie_details_list.txt") as json_file:
-    #CREATE MOVIE
     movies_list = json.load(json_file)
+    return [item for item in movies_list if item["genre"] == genre_number]
 
-#getting list of movies
-pass
-
-
-#saveTitleData()
-
-merge_files("disneyplustitles.txt", "amazontitles.txt", "netflixtitles.txt", "hbomaxtitles.txt", "hulutitles.txt")
+print(decode_genre("Horror"))
+#print(get_movies("Horror"))
+#merge_files("disneyplustitles.txt", "amazontitles.txt", "netflixtitles.txt", "hbomaxtitles.txt", "hulutitles.txt")
