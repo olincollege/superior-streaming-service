@@ -13,75 +13,80 @@ testApi7="oWBeZ4Up3ESsGPZRn9wmlISCndVW1G2ZV7nbXakx"
 
 
 
-def fetch_source_data():
 
-  #params to take in 
-    #types:this is the type of accounts offered i.e sub,free,purchase
-    #regions:this the region where this streaming services are found 
-     #https://api.watchmode.com/v1/sources/?apiKey=KiPGkbzEgEKUwhVXB3WARAco0prVUiCdWSuPiTUb&regions=US
-    with urllib.request.urlopen(f"https://api.watchmode.com/v1/sources/?apiKey={apiKey}") as url:
-      data = json.loads(url.read().decode())
-      print(data)
+def fetch_title_data(id):
+    """
+    This function takes in an id of a movie and sends a request to the watchmode api to get the details of the movie.
+    The API response is a dictionary with all the details of the said movie
+    Args:
+    id:this is the id of the movie
+    Returns:
+    The function returns a dictionary with all the relevant details of a movie
+    
+    """
+    with urllib.request.urlopen(f"https://api.watchmode.com/v1/title/{id}/details/?apiKey={testApi4}") as url:
+        data = json.loads(url.read().decode())
+        print(data)
+        if data:
+          return data
+        return
 
-def fetch_region_data():
-    with urllib.request.urlopen(f"https://api.watchmode.com/v1/regions/?apiKey={apiKey}") as url:
-      data = json.loads(url.read().decode())
-      print(data)
+def fetch_list_title_data(source_id):
+    """
+    
+    This function takes in a source id as a parameter and  sends a request to the watchmode api to get a list of all the movies from a certain source(Netflix,HBO).
+    Since the watchmode API returns data in pages, the function iterates through all the pages untill it has gotten all the data from that particular source.
 
-def fetch_network_data():
-    with urllib.request.urlopen(f"https://api.watchmode.com/v1/networks/?apiKey={apiKey}") as url:
-      data = json.loads(url.read().decode())
-      print(data)   
+    Args:
+    source_id:this is the id of a particular source.For example, Netflix source id is 243
 
-def fetch_genre_data():
-    with urllib.request.urlopen(f"https://api.watchmode.com/v1/genres/?apiKey={apiKey}") as url:
-      data = json.loads(url.read().decode())
-      print(data) 
+    Returns:
+    The function returns a list of all the movies that exist in that particular source
 
-def fetch_title_data(id,count):
-  #  current_api_key=apiKey
-  #  if  count % 2 == 0:
-  #    current_api_key=apiKey
-  #  elif count % 3:
-  #    current_api_key=apiKey2
-  #  else:
-  #    current_api_key=apiKey3
-
-   with urllib.request.urlopen(f"https://api.watchmode.com/v1/title/{id}/details/?apiKey={testApi4}") as url:
-      data = json.loads(url.read().decode())
-      print(data)
-      if data:
-         return data
-      return
-
-def fetch_list_title_data():
+    """
     movies_array=[]
     total_pages=34
     page=1
     while page<=total_pages:
-        with urllib.request.urlopen(f"https://api.watchmode.com/v1/list-titles/?apiKey={apiKey3}&source_ids=26&page={page}") as url:
+        with urllib.request.urlopen(f"https://api.watchmode.com/v1/list-titles/?apiKey={apiKey3}&source_ids={source_id}&page={page}") as url:
           data = json.loads(url.read().decode())
           print(page)
           movies_array+=data["titles"]
-          # print(data["total_pages"])
-          # writeIntoJson(data["titles"])
           page+=1
     return movies_array
 
 
 def write_to_file():
-    data=fetch_list_title_data()
+    """
+
+    This function writes all the movies from a specific source into one file.Once the `fetch_list_title_data` gets information from the watchmode API,
+    this function then writes that data into a file
+
+    """
+    data=fetch_list_title_data("243")
     with open('amazon.txt', 'w') as outfile:
         json.dump(data, outfile)
 
 def fetch_title_details(srcfile,source):
+    """
+
+    This function utilises `fetch_title_data` to fetch data from the watchmode api, it then iterates through the list of dictionaries and 
+    appends the source attribute to each dictionary.
+
+    Args:
+      srcfile:This is the source fille to get data on all the movie titles
+      source:This is the name of the source i.e Netflix
+
+    Returns:
+    The function returns all the titles of movies with the source they are from appended
+
+    """ 
     with open(srcfile) as json_file:
      data = json.load(json_file)
      titles=[]
      count=0
      for i in data:
        if count <=100:
-        print(count)
         title=fetch_title_data(i['id'],count)
         title['source']= source
         titles.append(title)
@@ -91,17 +96,17 @@ def fetch_title_details(srcfile,source):
      return titles
 
 def save_title_data():
+    """
+
+    This function writes all the movies titles from a specific source into one file.Once the `fetch_title_details` gets information from the watchmode API,
+    this function then writes that data into a file
+    
+    """
     data=fetch_title_details("amazon.txt","Amazon Prime")
     with open('amazontitles.txt', 'w') as outfile:
         json.dump(data, outfile)
 
-def analyze_title_data():
-  with open('crackletitle.txt') as json_file:
-     data = json.load(json_file)
-     for i in data:
-         if i['genres'] != None:
-            print(i['genres'][:1])
-       
+
 
 
 #Plotting functions
@@ -171,10 +176,20 @@ def get_movies(genre):
   """
   #get all movies with genre id "genre_number" 
   genre_number = decode_genre(genre)
+  print("genre_number",genre_number)
+  genre_movies=[]
   with open("movie_details_list.txt") as json_file:
     movies_list = json.load(json_file)
-    return [item for item in movies_list if item["genre"] == genre_number]
+    # print(movies_list)
+    for item in movies_list:
+        # print(item['genres'])
+      if item['genres']!= None:
+        if genre_number in item['genres']:
+           genre_movies.append(item)
+        else:
+          print("No horror movie found")
+    return genre_movies
 
-print(decode_genre("Horror"))
-#print(get_movies("Horror"))
+# print(decode_genre("Horror"))
+print(get_movies("Horror"))
 #merge_files("disneyplustitles.txt", "amazontitles.txt", "netflixtitles.txt", "hbomaxtitles.txt", "hulutitles.txt")
