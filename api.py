@@ -56,7 +56,7 @@ def fetch_list_title_data(source_id):
     return movies_array
 
 
-def write_to_file():
+def fetch_and_write_title_ids_to_file():
     """
 
     This function writes all the movies from a specific source into one file.Once the `fetch_list_title_data` gets information from the watchmode API,
@@ -95,7 +95,7 @@ def fetch_title_details(srcfile,source):
          break 
      return titles
 
-def save_title_data():
+def save_title_details_data():
     """
 
     This function writes all the movies titles from a specific source into one file.Once the `fetch_title_details` gets information from the watchmode API,
