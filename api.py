@@ -313,18 +313,16 @@ def bar_plot_genre_ratings(genre):
   #show plot
   plt.show()
 
-def bubble_plot_genre(genre):
+def scatter_plot_genre(genre):
   """
-  Displays a bubble plot of the media across the top 5 streaming services for
-  a specific genre. The size of the bubbles is determined by how many movies
-  of that genre the service carries.
+  Displays a scatter plot of the media across the top 5 streaming services for
+  a specific genre.
 
   Args:
   genre: a string representing the genre we want to explore
 
   Returns:
-  Nothing, but displays a bubble plot of the services vs genres, with bubble
-  size determined by the quantity of movies/shows the service has.
+  Nothing, but displays a scatter plot of the services vs genres, 
   """
   #data
   quantities = [number_of_movies(genre, "Netflix"),
@@ -352,6 +350,102 @@ def bubble_plot_genre(genre):
   plt.xlabel("Number of Movies/Shows in Genre")
   plt.ylabel("Average Rating of Movies in Genre")
   plt.title("Average Rating of Movies vs. Amount of Movies in Genre")
+
+def bubble_plot_genre(genre, student=False):
+  """
+  Displays a bubble plot of the media across the top 5 streaming services for
+  a specific genre. The size of the bubbles is determined by how many movies
+  of that genre the service carries. Note that these are the prices for the
+  "basic" plans. More expensive options are available, but the number of movies
+  stays the same.
+
+  Args:
+  genre: a string representing the genre we want to explore
+  student: a boolean which allows the user to choose whether they want to see
+  the prices for students or non-students. This option is due to the fact that
+  students often get discounts on streaming services, so the price is not the
+  same for them.
+
+  Returns:
+  Nothing, but displays a bubble plot of the services vs genres, with bubble
+  size determined by the quantity of movies/shows the service has.
+  """
+
+  #data
+  quantities = [number_of_movies(genre, "Netflix"),
+          number_of_movies(genre, "Hulu"),
+          number_of_movies(genre, "Amazon Prime"),
+          number_of_movies(genre, "HBO MAX"),
+          number_of_movies(genre, "Disney Plus"), ]
+
+  ratings = [get_genre_ratings(genre, "Netflix"),
+          get_genre_ratings(genre, "Hulu"),
+          get_genre_ratings(genre, "Amazon Prime"),
+          get_genre_ratings(genre, "HBO MAX"), 
+          get_genre_ratings(genre, "Disney Plus"), ]
+  labels = ["Netflix", "Hulu", "Amazon Prime", "HBO MAX", "Disney Plus"]
+
+  if student == True:
+    prices = [8.99, 2, 8.99, 14.99, 7.99]
+  else:
+    prices = [8.99, 6, 6.49, 14.99, 7.99]
+  
+
+
+  #plot
+  plt.scatter(quantities, ratings, c=sorted(prices), alpha=0.5,
+              s = [price*100 for price in prices])
+
+  #label points
+  for i, txt in enumerate(labels):
+    plt.annotate(txt, (quantities[i], ratings[i]))
+  
+  #titles
+  plt.xlabel("Number of Movies/Shows in Genre")
+  plt.ylabel(f"Average Rating of Movies in {genre} Genre")
+  plt.title(f"Average Rating of Movies vs. Amount of Movies in {genre} Genre")
+
+  #bubble plot is just scatter with variable bubble sizes
+
+def circular_barplot_prices(student=False):
+  """
+  Plots a circular barplot to show the prices of the streaming services.
+
+  Args:
+  No required arguments
+  student: a boolean value for whether you want to see the regular prices or
+  the special student prices. These prices are the cost per month.
+
+  Returns:
+  Nothing, but generates a circular barplot.
+  """
+  if student == True:
+    prices = [8.99, 2, 8.99, 14.99, 7.99]
+  else:
+    prices = [8.99, 6, 6.49, 14.99, 7.99]
+
+  labels = ["Netflix", "Hulu", "Amazon Prime", "HBO MAX", "Disney Plus"]
+  max_price = max(prices)
+  print(max_price)
+
+  #plotting time
+  ax = plt.subplot(111, polar=True)
+  plt.axis("off")
+
+  width = 2*np.pi / len(prices)
+  indexes=list(range(1, len(prices)+1))
+  angles = [element * width for element in indexes]
+
+  #coordinate limits?
+  #draw bars
+  bars = ax.bars(
+    x=angles,
+    height=labels,
+    width=width,
+    bottom=0,
+    linewidth=2,
+    edgecolor="white")
+
 
 
 
