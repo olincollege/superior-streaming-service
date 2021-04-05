@@ -1,5 +1,9 @@
 import urllib.request
 import json
+import statistics
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
 apiKey="SI4GiZabAskTGu45hy9LUzyQThhVeJzMor9iY3rD"
 apiKey2='VPj1VSW4gltUJXs40u0o7kdozDToKqYWco0a7zNc'
 apiKey3='YsD9TJSwufHmkcTOKqZ7SAPhdLirB8kRldcJ9pNB'
@@ -87,7 +91,7 @@ def fetch_title_details(srcfile,source):
      count=0
      for i in data:
        if count <=100:
-        title=fetch_title_data(i['id'],count)
+        title= fetch_title_data(i['id'],count)
         title['source']= source
         titles.append(title)
         count+=1
@@ -106,10 +110,6 @@ def save_title_details_data():
     with open('amazontitles.txt', 'w') as outfile:
         json.dump(data, outfile)
 
-
-
-
-#Plotting functions
 
 #Merges all 5 individual files
 def merge_files(file1, file2, file3, file4, file5, combined_file):
@@ -140,6 +140,7 @@ def merge_files(file1, file2, file3, file4, file5, combined_file):
 
         outfile.write("\n")
   pass
+
 
 def decode_genre(genre):
   """
@@ -172,11 +173,10 @@ def get_movies(genre):
 
   Returns:
   A list of dictionaries of all of the movies across 5 streaming services that fit
-  within a genre
+  within a genre.
   """
   #get all movies with genre id "genre_number" 
   genre_number = decode_genre(genre)
-  print("genre_number",genre_number)
   genre_movies=[]
   with open("movie_details_list.txt") as json_file:
     movies_list = json.load(json_file)
@@ -186,10 +186,179 @@ def get_movies(genre):
       if item['genres']!= None:
         if genre_number in item['genres']:
            genre_movies.append(item)
-        else:
-          print("No horror movie found")
-    return genre_movies
+  return genre_movies
 
+
+def get_genre_ratings(genre, source):
+  """
+  Gets the average user rating of a movies in a genre within a specified source.
+
+  Args:
+  genre: string; the genre we are looking to explore the ratings for.
+  source: string; the specific source within which we are looking to get ratings
+
+  Returns:
+  An integer representing the average user rating of movies of a certain genre
+  within a specified source.
+  """
+  #get ratings list
+  movies = get_movies(genre)
+  ratings =[]
+  if len(movies) == 0:
+    # print(f"There are no {genre} movies or shows across all 5 services")
+    return 0
+  else:
+    for item in movies:
+        if item['user_rating']!= None:
+          if source in item["source"]:
+            ratings.append(item["user_rating"])
+        else:
+            continue
+    #edge case, there are no movies of that genre
+    if len(ratings) == 0:
+      print(f"No {genre} movies found in {source}")
+      average_rating = 0
+    else:
+      average_rating = statistics.mean(ratings)
+    return round(average_rating, 2)
+    
+
+
+def genres_list():
+  """
+  Shows a list of genres so that users can experiment with genre-based functions
+
+  Args:
+  none
+
+  Returns:
+  none but prints a list of the valid genres that can be inputted into the
+  functions of this project.
+  """
+  genre_list = []
+  with open("genre.txt") as json_file:
+    genre_data = json.load(json_file)
+
+    for item in genre_data:
+        genre_list.append(item["name"])
+        genre_list_easy_read = '\n'.join(genre_list)
+    print(genre_list_easy_read)
+
+
+def number_of_movies(genre, source):
+  """
+  Counts the number of movies in a specific genre within a single source.
+
+  Args:
+  genre: a string representning the genre which we want to explore
+  source: a string representing the streaming service within which we are
+  counting the movies/shows.
+
+  Returns:
+  An integer representing how many movies of a certain genre the inputted
+  source carries.
+  """
+  #movies of a genre
+  movies = get_movies(genre)
+  count = 0
+  
+  #iterate through movies
+  for item in movies:
+    #iterate through only one source
+    if source in item["source"]:
+      count += 1
+    else:
+      continue
+  return count
+
+
+
+#PLOTTING FUNCTIONS
+def bar_plot_genre_ratings(genre):
+  """
+  Generates a bar plot of average rating per genre for the top 5 streaming services.
+
+
+  Args:
+  genre: a string representing the genre we want to analyze
+
+  Returns:
+  Nothing, but generates a bar plot
+  """
+  #data
+  #check that there are movies
+  movies = get_movies(genre)
+  if len(movies) == 0:
+    print(f"There are no {genre} movies or shows across all 5 services")
+  
+  height = [get_genre_ratings(genre, "Netflix"),
+           get_genre_ratings(genre, "Hulu"),
+           get_genre_ratings(genre, "Amazon Prime"),
+           get_genre_ratings(genre, "HBO MAX"), 
+           get_genre_ratings(genre, "Disney Plus"), ]
+  bars = ["Netflix", "Hulu", "Amazon Prime", "HBO MAX", "Disney+"]
+  y_pos = np.arange(len(bars))
+
+  #create bars
+  plt.bar(y_pos, height)
+
+  #x axis names
+  plt.xticks(y_pos, bars)
+
+  #titles
+  plt.title(f"Average Media Rating for {genre}")
+  plt.xlabel("Streaming Service")
+  plt.ylabel("Average User Rating (out of 10)")
+
+  #show plot
+  plt.show()
+
+def bubble_plot_genre(genre):
+  """
+  Displays a bubble plot of the media across the top 5 streaming services for
+  a specific genre. The size of the bubbles is determined by how many movies
+  of that genre the service carries.
+
+  Args:
+  genre: a string representing the genre we want to explore
+
+  Returns:
+  Nothing, but displays a bubble plot of the services vs genres, with bubble
+  size determined by the quantity of movies/shows the service has.
+  """
+  #data
+  quantities = [number_of_movies(genre, "Netflix"),
+           number_of_movies(genre, "Hulu"),
+           number_of_movies(genre, "Amazon Prime"),
+           number_of_movies(genre, "HBO MAX"), 
+           number_of_movies(genre, "Disney Plus"), ]
+
+  ratings = [get_genre_ratings(genre, "Netflix"),
+           get_genre_ratings(genre, "Hulu"),
+           get_genre_ratings(genre, "Amazon Prime"),
+           get_genre_ratings(genre, "HBO MAX"), 
+           get_genre_ratings(genre, "Disney Plus"), ]
+
+  labels = ["Netflix", "Hulu", "Amazon Prime", "HBO MAX", "Disney Plus"]
+
+  #plot
+  plt.scatter(quantities, ratings)
+
+  #label points
+  for i, txt in enumerate(labels):
+    plt.annotate(txt, (quantities[i], ratings[i]))
+  
+  #titles
+  plt.xlabel("Number of Movies/Shows in Genre")
+  plt.ylabel("Average Rating of Movies in Genre")
+  plt.title("Average Rating of Movies vs. Amount of Movies in Genre")
+
+
+
+#STATEMENTS FOR FUNCTION TESTING
+
+#print(number_of_movies("Horror", "Disney Plus"))
 # print(decode_genre("Horror"))
-print(get_movies("Horror"))
-#merge_files("disneyplustitles.txt", "amazontitles.txt", "netflixtitles.txt", "hbomaxtitles.txt", "hulutitles.txt")
+# print(get_genre_ratings("Comedy", "Disney +"))
+#genres_list()
+# print(get_movies("Comedy"))
