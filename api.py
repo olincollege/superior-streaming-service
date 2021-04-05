@@ -1,5 +1,8 @@
 import urllib.request
 import json
+import statistics
+import numpy as np
+import matplotlib.pyplot as plt
 apiKey="SI4GiZabAskTGu45hy9LUzyQThhVeJzMor9iY3rD"
 apiKey2='VPj1VSW4gltUJXs40u0o7kdozDToKqYWco0a7zNc'
 apiKey3='YsD9TJSwufHmkcTOKqZ7SAPhdLirB8kRldcJ9pNB'
@@ -107,10 +110,6 @@ def save_title_data():
         json.dump(data, outfile)
 
 
-
-
-#Plotting functions
-
 #Merges all 5 individual files
 def merge_files(file1, file2, file3, file4, file5, combined_file):
 #I feel like theres a nicer way to have an unspecified number of args
@@ -172,11 +171,10 @@ def get_movies(genre):
 
   Returns:
   A list of dictionaries of all of the movies across 5 streaming services that fit
-  within a genre
+  within a genre.
   """
   #get all movies with genre id "genre_number" 
   genre_number = decode_genre(genre)
-  print("genre_number",genre_number)
   genre_movies=[]
   with open("movie_details_list.txt") as json_file:
     movies_list = json.load(json_file)
@@ -186,10 +184,66 @@ def get_movies(genre):
       if item['genres']!= None:
         if genre_number in item['genres']:
            genre_movies.append(item)
-        else:
-          print("No horror movie found")
-    return genre_movies
+    if genre_movies == []:
+      print(f"No {genre} movies found")
+    else:
+      return genre_movies
+
+def get_genre_ratings(genre, source):
+  """
+  Gets the average user rating of a movies in a genre within a specified source.
+
+  Args:
+  genre: string; the genre we are looking to explore the ratings for.
+  source: string; the specific source within which we are looking to get ratings
+
+  Returns:
+  An integer representing the average user rating of movies of a certain genre
+  within a specified source.
+  """
+  #get ratings list
+  movies = get_movies(genre)
+  ratings =[]
+  for item in movies:
+      if item['user_rating']!= None:
+        if source in item["source"]:
+           ratings.append(item["user_rating"])
+      else:
+          continue
+  return round(statistics.mean(ratings), 2)
+
+
+#PLOTTING FUNCTIONS
+def bar_plot_genre_ratings(genre):
+  """
+  Generates a bar plot of average rating per genre for the top 5 streaming services.
+
+
+  Args:
+  genre: a string representing the genre we want to analyze
+
+  Returns:
+  Nothing, but generates a bar plot
+  """
+  #data
+  height = [get_genre_ratings(genre, "Netflix"),
+           get_genre_ratings(genre, "Hulu"),
+           get_genre_ratings(genre, "Amazon Prime"),
+           get_genre_ratings(genre, "HBO MAX"), 
+           get_genre_ratings(genre, "Disney+"), ]
+  bars = ["Netflix", "Hulu", "Amazon Prime", "HBO MAX", "Disney+"]
+  y_pos = np.arange(len(bars))
+
+  #create bars
+  plt.bar(y_pos, height)
+
+  #x axis names
+  plt.xticks(y_pos, bars)
+
+  #show plot
+  plt.show()
 
 # print(decode_genre("Horror"))
-print(get_movies("Horror"))
+# print(get_genre_ratings("Comedy", "Netflix"))
+#print(get_movies("Comedy"))
 #merge_files("disneyplustitles.txt", "amazontitles.txt", "netflixtitles.txt", "hbomaxtitles.txt", "hulutitles.txt")
