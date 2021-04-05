@@ -140,6 +140,7 @@ def merge_files(file1, file2, file3, file4, file5, combined_file):
         outfile.write("\n")
   pass
 
+
 def decode_genre(genre):
   """
   Decodes genres by turning the name of the genre into an encoded number
@@ -184,10 +185,8 @@ def get_movies(genre):
       if item['genres']!= None:
         if genre_number in item['genres']:
            genre_movies.append(item)
-    if genre_movies == []:
-      print(f"No {genre} movies found")
-    else:
-      return genre_movies
+  return genre_movies
+
 
 def get_genre_ratings(genre, source):
   """
@@ -204,13 +203,45 @@ def get_genre_ratings(genre, source):
   #get ratings list
   movies = get_movies(genre)
   ratings =[]
-  for item in movies:
-      if item['user_rating']!= None:
-        if source in item["source"]:
-           ratings.append(item["user_rating"])
-      else:
-          continue
-  return round(statistics.mean(ratings), 2)
+  if len(movies) == 0:
+    # print(f"There are no {genre} movies or shows across all 5 services")
+    return 0
+  else:
+    for item in movies:
+        if item['user_rating']!= None:
+          if source in item["source"]:
+            ratings.append(item["user_rating"])
+        else:
+            continue
+    #edge case, there are no movies of that genre
+    if len(ratings) == 0:
+      print(f"No {genre} movies found in {source}")
+      average_rating = 0
+    else:
+      average_rating = statistics.mean(ratings)
+    return round(average_rating, 2)
+    
+
+
+def genres_list():
+  """
+  Shows a list of genres so that users can experiment with genre-based functions
+
+  Args:
+  none
+
+  Returns:
+  none but prints a list of the valid genres that can be inputted into the
+  functions of this project.
+  """
+  genre_list = []
+  with open("genre.txt") as json_file:
+    genre_data = json.load(json_file)
+
+    for item in genre_data:
+        genre_list.append(item["name"])
+        genre_list_easy_read = '\n'.join(genre_list)
+    print(genre_list_easy_read)
 
 
 #PLOTTING FUNCTIONS
@@ -226,11 +257,16 @@ def bar_plot_genre_ratings(genre):
   Nothing, but generates a bar plot
   """
   #data
+  #check that there are movies
+  movies = get_movies(genre)
+  if len(movies) == 0:
+    print(f"There are no {genre} movies or shows across all 5 services")
+  
   height = [get_genre_ratings(genre, "Netflix"),
            get_genre_ratings(genre, "Hulu"),
            get_genre_ratings(genre, "Amazon Prime"),
            get_genre_ratings(genre, "HBO MAX"), 
-           get_genre_ratings(genre, "Disney+"), ]
+           get_genre_ratings(genre, "Disney Plus"), ]
   bars = ["Netflix", "Hulu", "Amazon Prime", "HBO MAX", "Disney+"]
   y_pos = np.arange(len(bars))
 
@@ -240,10 +276,17 @@ def bar_plot_genre_ratings(genre):
   #x axis names
   plt.xticks(y_pos, bars)
 
+  #titles
+  plt.title(f"Average Media Rating for {genre}")
+  plt.xlabel("Streaming Service")
+  plt.ylabel("Average User Rating (out of 10)")
+
   #show plot
   plt.show()
 
+
 # print(decode_genre("Horror"))
-# print(get_genre_ratings("Comedy", "Netflix"))
-#print(get_movies("Comedy"))
+# print(get_genre_ratings("Comedy", "Disney +"))
+#genres_list()
+# print(get_movies("Comedy"))
 #merge_files("disneyplustitles.txt", "amazontitles.txt", "netflixtitles.txt", "hbomaxtitles.txt", "hulutitles.txt")
