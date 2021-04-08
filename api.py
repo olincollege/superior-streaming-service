@@ -3,7 +3,14 @@ import json
 import statistics
 import numpy as np
 import matplotlib.pyplot as plt
-import seaborn as sns
+from matplotlib.path import Path
+import matplotlib.patches as patches
+import pandas as pd
+from matplotlib.pyplot import figure
+from sklearn.preprocessing import MinMaxScaler
+# import plotly.express as px
+
+
 apiKey="SI4GiZabAskTGu45hy9LUzyQThhVeJzMor9iY3rD"
 apiKey2='VPj1VSW4gltUJXs40u0o7kdozDToKqYWco0a7zNc'
 apiKey3='YsD9TJSwufHmkcTOKqZ7SAPhdLirB8kRldcJ9pNB'
@@ -453,50 +460,46 @@ def bubble_plot_genre(genre, student=False):
     plt.annotate(txt, (quantities[i], ratings[i]))
   
   #titles
-  plt.xlabel("Number of Movies/Shows in Genre")
-  plt.ylabel(f"Average Rating of Movies in {genre} Genre")
-  plt.title(f"Average Rating of Movies vs. Amount of Movies in {genre} Genre")
+  plt.xlabel("Number of Titles in Genre")
+  plt.ylabel(f"Average Rating of Titles in {genre} Genre")
+  plt.title(f"Average Rating vs. Number of {genre} Titles")
 
-  #bubble plot is just scatter with variable bubble sizes
+def parallel_coordinate_plot(genre, student=False):
+  """
 
-# def circular_barplot_prices(student=False):
-#   """
-#   Plots a circular barplot to show the prices of the streaming services.
+  """
 
-#   Args:
-#   No required arguments
-#   student: a boolean value for whether you want to see the regular prices or
-#   the special student prices. These prices are the cost per month.
+  #source, quantity, quality, price
+  if student == True:
+    data = [
+            ["Netflix", number_of_movies(genre, "Netflix"), get_genre_ratings(genre, "Netflix"), 8.99],
+            ["Hulu", number_of_movies(genre, "Hulu"), get_genre_ratings(genre, "Hulu"), 2],
+            ["Amazon Prime", number_of_movies(genre, "Amazon Prime"),get_genre_ratings(genre, "Amazon Prime"),6.49],
+            ["HBO MAX", number_of_movies(genre, "HBO MAX"),get_genre_ratings(genre, "HBO MAX"),14.99],
+            ["Disney+", number_of_movies(genre, "Disney Plus"),get_genre_ratings(genre, "Disney Plus"),7.99]]
+  else:
+    data = [
+            ["Netflix", number_of_movies(genre, "Netflix"), get_genre_ratings(genre, "Netflix"), 8.99],
+            ["Hulu", number_of_movies(genre, "Hulu"), get_genre_ratings(genre, "Hulu"), 6],
+            ["Amazon Prime", number_of_movies(genre, "Amazon Prime"),get_genre_ratings(genre, "Amazon Prime"),8.99],
+            ["HBO MAX", number_of_movies(genre, "HBO MAX"),get_genre_ratings(genre, "HBO MAX"),14.99],
+            ["Disney+", number_of_movies(genre, "Disney Plus"),get_genre_ratings(genre, "Disney Plus"),7.99]
+            ]
 
-#   Returns:
-#   Nothing, but generates a circular barplot.
-#   """
-#   if student == True:
-#     prices = [8.99, 2, 8.99, 14.99, 7.99]
-#   else:
-#     prices = [8.99, 6, 6.49, 14.99, 7.99]
+  df = pd.DataFrame(data, columns = ["Name", "Number of Movies","Rating", "Price"])
+  Features = ["Number of Movies","Rating", "Price"]
 
-#   labels = ["Netflix", "Hulu", "Amazon Prime", "HBO MAX", "Disney Plus"]
-#   max_price = max(prices)
-#   print(max_price)
+  scaler = MinMaxScaler()
+  df_scal = df
+  df_scal['Rating'] = df['Rating']
 
-#   #plotting time
-#   ax = plt.subplot(111, polar=True)
-#   plt.axis("off")
+  df_scal[Features] = scaler.fit_transform(df[Features])
+  pd.plotting.parallel_coordinates(df, 'Name', colormap=plt.get_cmap("Set1"))
 
-#   width = 2*np.pi / len(prices)
-#   indexes=list(range(1, len(prices)+1))
-#   angles = [element * width for element in indexes]
-
-#   #coordinate limits?
-#   #draw bars
-#   bars = ax.bars(
-#     x=angles,
-#     height=labels,
-#     width=width,
-#     bottom=0,
-#     linewidth=2,
-#     edgecolor="white")
+  # Show the plot
+  plt.title("Streaming Service Rankings in Three Categories")
+  plt.ylabel("Ranking on Normalized Scale")
+  plt.show()
 
 
 # save_title_details_data()
