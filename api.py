@@ -18,7 +18,7 @@ testApi7="oWBeZ4Up3ESsGPZRn9wmlISCndVW1G2ZV7nbXakx"
 
 
 
-def fetch_title_data(id):
+def fetch_title_data(id,count):
     """
     This function takes in an id of a movie and sends a request to the watchmode api to get the details of the movie.
     The API response is a dictionary with all the details of the said movie
@@ -28,7 +28,13 @@ def fetch_title_data(id):
     The function returns a dictionary with all the relevant details of a movie
     
     """
-    with urllib.request.urlopen(f"https://api.watchmode.com/v1/title/{id}/details/?apiKey={testApi4}") as url:
+    current_api_key=testApi6
+    if count % 2 ==0:
+       current_api_key=testApi6
+    else:
+       current_api_key=testApi7
+
+    with urllib.request.urlopen(f"https://api.watchmode.com/v1/title/{id}/details/?apiKey={current_api_key}") as url:
         data = json.loads(url.read().decode())
         print(data)
         if data:
@@ -90,7 +96,8 @@ def fetch_title_details(srcfile,source):
      titles=[]
      count=0
      for i in data:
-       if count <=100:
+       if count <=200:
+        print(count) 
         title= fetch_title_data(i['id'],count)
         title['source']= source
         titles.append(title)
@@ -106,8 +113,8 @@ def save_title_details_data():
     this function then writes that data into a file
     
     """
-    data=fetch_title_details("amazon.txt","Amazon Prime")
-    with open('amazontitles.txt', 'w') as outfile:
+    data=fetch_title_details("netflix.txt","Netflix")
+    with open('netflixtitles1.txt', 'w') as outfile:
         json.dump(data, outfile)
 
 
@@ -447,10 +454,10 @@ def circular_barplot_prices(student=False):
     edgecolor="white")
 
 
-
+# save_title_details_data()
 
 #STATEMENTS FOR FUNCTION TESTING
-
+# merge_files('amazontitles1.txt','disneyplustitles1.txt','hbomaxtitles1.txt','hulutitles1.txt','netflixtitles1.txt','movie_details_list1.txt')
 #print(number_of_movies("Horror", "Disney Plus"))
 # print(decode_genre("Horror"))
 # print(get_genre_ratings("Comedy", "Disney +"))
