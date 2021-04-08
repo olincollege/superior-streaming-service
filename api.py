@@ -35,6 +35,24 @@ def decode_source(source):
     source_id = specific_source[0]["id"]
   return source_id
 
+def decode_genre_by_id(genre):
+  """
+  Gives the genre id for a genre of a certain name. This helps
+  with API calls as the genre id is needed to fetch data straight from the API
+
+  Args:
+  genre: a string representing the name of the genre (i.e.
+  Action, Horror)
+
+  Returns:
+  An integer representing the id of the genre in the API.
+  """
+
+  with open("genre.txt") as json_file:
+    genre_data = json.load(json_file)
+    specific_genre = [item for item in genre_data if item["name"] == genre]
+    genre_id = specific_genre[0]["id"]
+  return genre_id
 
 
 
@@ -51,11 +69,11 @@ def fetch_title_data(id,count):
     The function returns a dictionary with all the relevant details of a movie
     
     """
-    current_api_key=testApi6
+    current_api_key=testApi5
     if count % 2 ==0:
-       current_api_key=testApi6
+       current_api_key=testApi5
     else:
-       current_api_key=testApi7
+       current_api_key=testApi4
 
     with urllib.request.urlopen(f"https://api.watchmode.com/v1/title/{id}/details/?apiKey={current_api_key}") as url:
         data = json.loads(url.read().decode())
