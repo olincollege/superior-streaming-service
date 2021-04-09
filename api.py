@@ -3,7 +3,7 @@ import json
 import statistics
 import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib.path import Path
+#from matplotlib.path import Path
 import matplotlib.patches as patches
 import pandas as pd
 from matplotlib.pyplot import figure
@@ -52,20 +52,31 @@ def decode_genre_by_id(genre):
     return genre_id
 
 
-def fetch_title_data(id, count, api_key):
+def fetch_title_data(id, count, api_key1, api_key2):
     """
     This function takes in an id of a movie and sends a request to the
     watchmode api to get the details of the movie. The API response is a
-    dictionary with all the details of said movie.
+    dictionary with all the details of said movie. The reason why there
+    are two API keys is because the Watchmode API only allows around 120
+    calls per minute. Therefore, we cycle through two in order to avoid
+    any errors with this limitation.
 
     Args:
     id: a string representing the id of the movie
+    count: the number of times the function has been called
+    api_key1: string, the first API key we will be cycling through
+    api_key2: string, the second API key
 
     Returns:
     The function returns a dictionary with all the relevant details of a movie
 
     """
-    with urllib.request.urlopen(f"https://api.watchmode.com/v1/title/{id}/details/?apiKey={api_key}") as url:
+    if count %2==0:
+      current_key = api_key1
+    else:
+      current_key = api_key2
+    
+    with urllib.request.urlopen(f"https://api.watchmode.com/v1/title/{id}/details/?apiKey={current_key}") as url:
         data = json.loads(url.read().decode())
         # print(data)
         if data:
@@ -122,7 +133,7 @@ def fetch_and_write_title_ids_to_file(source, filename, api):
         json.dump(data, outfile)
 
 
-def fetch_title_details(srcfile, source, api_key):
+def fetch_title_details(srcfile, source, api_key1, api_key2):
     """
 
     This function utilises `fetch_title_data` to fetch data from the watchmode
@@ -132,9 +143,11 @@ def fetch_title_details(srcfile, source, api_key):
     Args:
       srcfile:  This is the source file to get data on all the movie titles
       source: This is the name of the streaming service i.e Netflix
+      api_key1: the first API key we will be cycling through
+      api_key2: the second API key
 
     Returns:
-    The function returns a list of all of the movies with the service appended.
+      The function returns a list of all of the movies with the service appended.
 
     """
     with open(srcfile) as json_file:
@@ -144,7 +157,7 @@ def fetch_title_details(srcfile, source, api_key):
         for i in data:
             if count <= 200:
                 # print(count)
-                title = fetch_title_data(i['id'], count, api_key)
+                title = fetch_title_data(i['id'], count, api_key1, api_key2)
                 title['source'] = source
                 titles.append(title)
                 count += 1
@@ -153,7 +166,7 @@ def fetch_title_details(srcfile, source, api_key):
         return titles
 
 
-def save_title_details_data(source_file, service, new_file, api_key):
+def save_title_details_data(source_file, service, new_file, api_key1, api_key2):
     """
 
     This function writes all the movies titles from a specific source into one
@@ -167,15 +180,20 @@ def save_title_details_data(source_file, service, new_file, api_key):
       (i.e. "Netflix")
       new_file: a string representing the name of the new file in which the
       API data will be locally stored.
+      api_key1: string, the first API key we will be cycling through
+      api_key2: string, the second API key
+
+      Returns:
+        Nothing
 
     """
-    data = fetch_title_details(source_file, service, api_key)
+    data = fetch_title_details(source_file, service, api_key1, api_key2)
     with open(new_file, 'w') as outfile:
         json.dump(data, outfile)
 
 
 # Merges all 5 individual files
-def merge_files(files_list, combined_file):
+def merge_files(file1, file2, file3, file4, file5, combined_file):
     # I feel like theres a nicer way to have an unspecified number of args
     # but this will do for now
     """
@@ -183,7 +201,7 @@ def merge_files(files_list, combined_file):
     data in a further function.
 
     Args:
-    files_list: a list of strings which represent the names of
+    file1, file2, file3, file4, file5: all are strings representing the names of
     files (including the extension) that are to be combined.
 
     combined_file: a string representing the name of the file to be created
@@ -191,11 +209,11 @@ def merge_files(files_list, combined_file):
     Returns:
     Nothing, but creates a file named
     """
-
+    filenames = [file1, file2, file3, file4, file5]
     with open(combined_file, 'w') as outfile:
 
         # Iterate through list
-        for names in files_list:
+        for names in filenames:
 
             # Open each file in read mode
             with open(names) as infile:
@@ -209,7 +227,7 @@ def decode_genre(genre):
     """
     Decodes genres by turning the name of the genre into an encoded number
 
-    Args:
+    Args: 
     genre: a string containing the name of the genre
 
     Returns:
@@ -383,8 +401,7 @@ def scatter_plot_genre(genre):
     genre: a string representing the genre we want to explore
 
     Returns:
-    Nothing, but displays a scatter plot of the services vs genres
-    
+    Nothing, but displays a scatter plot of the services vs genres, 
     """
     # data
     quantities = [number_of_movies(genre, "Netflix"),
@@ -469,7 +486,17 @@ def bubble_plot_genre(genre, student=False):
 
 def parallel_coordinate_plot(genre, student=False):
     """
+    Creates a parallel coordinate plot that comapres streaming services to one
+    another in a normalized scale. This meaning, the services are rated on a
+    scale of 0 to 1 in order to ease visibility.
 
+    Args: 
+    genre: string, the genre we want to explore
+    student: boolean, optional argument for whether the prices we are exploring
+    will be student prices or non-student prices.
+
+    Returns:
+    Nothing, but generates a parallel coordinate plot.
     """
 
     #source, quantity, quality, price
@@ -500,13 +527,13 @@ def parallel_coordinate_plot(genre, student=False):
 
     df = pd.DataFrame(
         data, columns=["Name", "Number of Movies", "Rating", "Price"])
-    features = ["Number of Movies", "Rating", "Price"]
+    Features = ["Number of Movies", "Rating", "Price"]
 
     scaler = MinMaxScaler()
     df_scal = df
     df_scal['Rating'] = df['Rating']
 
-    df_scal[features] = scaler.fit_transform(df[features])
+    df_scal[Features] = scaler.fit_transform(df[Features])
     pd.plotting.parallel_coordinates(df, 'Name', colormap=plt.get_cmap("Set1"))
 
     # Show the plot
