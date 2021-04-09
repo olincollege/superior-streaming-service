@@ -193,7 +193,7 @@ def save_title_details_data(source_file, service, new_file, api_key1, api_key2):
 
 
 # Merges all 5 individual files
-def merge_files(file1, file2, file3, file4, file5, combined_file):
+def merge_files(files, combined_file):
     # I feel like theres a nicer way to have an unspecified number of args
     # but this will do for now
     """
@@ -209,7 +209,8 @@ def merge_files(file1, file2, file3, file4, file5, combined_file):
     Returns:
     Nothing, but creates a file named
     """
-    filenames = [file1, file2, file3, file4, file5]
+    filenames = files
+    new_file_data=[]
     with open(combined_file, 'w') as outfile:
 
         # Iterate through list
@@ -217,10 +218,13 @@ def merge_files(file1, file2, file3, file4, file5, combined_file):
 
             # Open each file in read mode
             with open(names) as infile:
-                outfile.write(infile.read())
-
-            outfile.write("\n")
-    pass
+                 print(names)
+                 file_data = json.load(infile)
+                 new_file_data+=file_data
+        json.dump(new_file_data, outfile)
+        # outfile.write(new_file_data)
+        # outfile.write("\n")
+  
 
 
 def decode_genre(genre):
