@@ -175,7 +175,7 @@ def save_title_details_data(source_file, service, new_file, api_key):
 
 
 # Merges all 5 individual files
-def merge_files(file1, file2, file3, file4, file5, combined_file):
+def merge_files(files_list, combined_file):
     # I feel like theres a nicer way to have an unspecified number of args
     # but this will do for now
     """
@@ -183,7 +183,7 @@ def merge_files(file1, file2, file3, file4, file5, combined_file):
     data in a further function.
 
     Args:
-    file1, file2, file3, file4, file5: all are strings representing the names of
+    files_list: a list of strings which represent the names of
     files (including the extension) that are to be combined.
 
     combined_file: a string representing the name of the file to be created
@@ -191,11 +191,11 @@ def merge_files(file1, file2, file3, file4, file5, combined_file):
     Returns:
     Nothing, but creates a file named
     """
-    filenames = [file1, file2, file3, file4, file5]
+
     with open(combined_file, 'w') as outfile:
 
         # Iterate through list
-        for names in filenames:
+        for names in files_list:
 
             # Open each file in read mode
             with open(names) as infile:
@@ -209,7 +209,7 @@ def decode_genre(genre):
     """
     Decodes genres by turning the name of the genre into an encoded number
 
-    Args: 
+    Args:
     genre: a string containing the name of the genre
 
     Returns:
@@ -383,7 +383,8 @@ def scatter_plot_genre(genre):
     genre: a string representing the genre we want to explore
 
     Returns:
-    Nothing, but displays a scatter plot of the services vs genres, 
+    Nothing, but displays a scatter plot of the services vs genres
+    
     """
     # data
     quantities = [number_of_movies(genre, "Netflix"),
@@ -499,13 +500,13 @@ def parallel_coordinate_plot(genre, student=False):
 
     df = pd.DataFrame(
         data, columns=["Name", "Number of Movies", "Rating", "Price"])
-    Features = ["Number of Movies", "Rating", "Price"]
+    features = ["Number of Movies", "Rating", "Price"]
 
     scaler = MinMaxScaler()
     df_scal = df
     df_scal['Rating'] = df['Rating']
 
-    df_scal[Features] = scaler.fit_transform(df[Features])
+    df_scal[features] = scaler.fit_transform(df[features])
     pd.plotting.parallel_coordinates(df, 'Name', colormap=plt.get_cmap("Set1"))
 
     # Show the plot
