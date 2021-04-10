@@ -377,7 +377,7 @@ def bar_plot_genre_ratings(genre):
               get_genre_ratings(genre, "Hulu"),
               get_genre_ratings(genre, "Amazon Prime"),
               get_genre_ratings(genre, "HBO MAX"),
-              get_genre_ratings(genre, "Disney Plus"), ]
+              get_genre_ratings(genre, "Disney+"), ]
     bars = ["Netflix", "Hulu", "Amazon Prime", "HBO MAX", "Disney+"]
     y_pos = np.arange(len(bars))
 
@@ -412,15 +412,15 @@ def scatter_plot_genre(genre):
                   number_of_movies(genre, "Hulu"),
                   number_of_movies(genre, "Amazon Prime"),
                   number_of_movies(genre, "HBO MAX"),
-                  number_of_movies(genre, "Disney Plus"), ]
+                  number_of_movies(genre, "Disney+"), ]
 
     ratings = [get_genre_ratings(genre, "Netflix"),
                get_genre_ratings(genre, "Hulu"),
                get_genre_ratings(genre, "Amazon Prime"),
                get_genre_ratings(genre, "HBO MAX"),
-               get_genre_ratings(genre, "Disney Plus"), ]
+               get_genre_ratings(genre, "Disney+"), ]
 
-    labels = ["Netflix", "Hulu", "Amazon Prime", "HBO MAX", "Disney Plus"]
+    labels = ["Netflix", "Hulu", "Amazon Prime", "HBO MAX", "Disney+"]
 
     # plot
     plt.scatter(quantities, ratings)
@@ -460,14 +460,14 @@ def bubble_plot_genre(genre, student=False):
                   number_of_movies(genre, "Hulu"),
                   number_of_movies(genre, "Amazon Prime"),
                   number_of_movies(genre, "HBO MAX"),
-                  number_of_movies(genre, "Disney Plus"), ]
+                  number_of_movies(genre, "Disney+"), ]
 
     ratings = [get_genre_ratings(genre, "Netflix"),
                get_genre_ratings(genre, "Hulu"),
                get_genre_ratings(genre, "Amazon Prime"),
                get_genre_ratings(genre, "HBO MAX"),
-               get_genre_ratings(genre, "Disney Plus"), ]
-    labels = ["Netflix", "Hulu", "Amazon Prime", "HBO MAX", "Disney Plus"]
+               get_genre_ratings(genre, "Disney+"), ]
+    labels = ["Netflix", "Hulu", "Amazon Prime", "HBO MAX", "Disney+"]
 
     if student == True:
         prices = [8.99, 2, 8.99, 14.99, 7.99]
@@ -514,7 +514,7 @@ def parallel_coordinate_plot(genre, student=False):
                 genre, "Amazon Prime"), get_genre_ratings(genre, "Amazon Prime"), 6.49],
             ["HBO MAX", number_of_movies(genre, "HBO MAX"), get_genre_ratings(
                 genre, "HBO MAX"), 14.99],
-            ["Disney+", number_of_movies(genre, "Disney Plus"), get_genre_ratings(genre, "Disney Plus"), 7.99]]
+            ["Disney+", number_of_movies(genre, "Disney+"), get_genre_ratings(genre, "Disney+"), 7.99]]
     else:
         data = [
             ["Netflix", number_of_movies(
@@ -525,8 +525,8 @@ def parallel_coordinate_plot(genre, student=False):
                 genre, "Amazon Prime"), get_genre_ratings(genre, "Amazon Prime"), 8.99],
             ["HBO MAX", number_of_movies(genre, "HBO MAX"), get_genre_ratings(
                 genre, "HBO MAX"), 14.99],
-            ["Disney+", number_of_movies(genre, "Disney Plus"),
-             get_genre_ratings(genre, "Disney Plus"), 7.99]
+            ["Disney+", number_of_movies(genre, "Disney+"),
+             get_genre_ratings(genre, "Disney+"), 7.99]
         ]
 
     df = pd.DataFrame(
